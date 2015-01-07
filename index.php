@@ -13,6 +13,15 @@ class Soccer {
 	public $team="Juventus";
 	public $club="Serie A";
 }
+
+$soccer1 = new Soccer();
+print $soccer1>
+name;
+// default name
+
+public function myMethod( $name, $number) {
+// stuff
+}
 ////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////////
 class Music{
 	//class Instrument
@@ -23,11 +32,20 @@ class Music{
 $music1 = newMusic();
 $music2 = newMusic();
 
-class Soccer {
+class Music {
 	private $Band="Led Zepplin";
 	private $song="Stairway to Heaven";
 	private $genre="Rock";
 	private $Members=4;
+}
+
+$music1 = new Music();
+print $music1>
+name;
+// default name
+
+public function myMethod( $Band, $song) {
+// stuff
 }
 //////////////////////////////////////////////////////////////// /\///\/_//\ ///////////////////////////////////////////////////////////
 class Nature{
@@ -45,3 +63,76 @@ class Nature {
 	protected $vegetable="Artichoke";
 	protected $flower="Cherry Blossom";
 }
+
+$nature1 = new Nature();
+print $nature1>
+name;
+// default name
+
+public function myMethod( $tree, $fruit) {
+// stuff
+}
+//////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
+class Soccer {
+	public $name="player";
+	public $number=13;
+	public $team="Juventus";
+	public $club="Serie A";
+
+	function getName() {
+	return “{$this>
+	firstName}” .
+	“{$this>
+	lastName}”;
+	}
+}
+
+$soccer1 = new Soccer();
+$soccer1>firstName = “Andrea”;
+$soccer1>lastName = “Pirlo”;
+print “The players name is{$soccer1>getName()}.”;
+
+//The players name is Andrea Pirlo
+//////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
+class Music {
+	private $Band="Led Zepplin";
+	private $song="Stairway to Heaven";
+	private $genre="Rock";
+	private $Members=4;
+
+	function getName() {
+	return “{$this>
+	firstName}” .
+	“{$this>
+	lastName}”;
+	}
+}
+
+$music1 = new Music();
+$music1>firstName = “Led”;
+$music1>lastName = “Zepplin”;
+print “The band name is{$music1>getName()}.”;
+
+//The band name is Led Zepplin
+//////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
+class Nature {
+	protected $tree="oak";
+	protected $fruit="apple";
+	protected $vegetable="Artichoke";
+	protected $flower="Cherry Blossom";
+	public $price = 0;
+
+	function getName() {
+	return “{$this>
+	firstName}” .
+	“{$this>
+	lastName}”;
+	}
+}
+
+$nature1 = new Nature();
+$nature1>firstName = “Oak”;
+$nature1>lastName = “Tree”;
+print “The tree name is {$nature1>getName()}.”;
+
+//The tree name is Oak Tree
