@@ -1,3 +1,4 @@
+<!-- LECTURE 1 -->
 class Soccer{
 	//class player
 	//class ball
@@ -136,3 +137,64 @@ $nature1>lastName = “Tree”;
 print “The tree name is {$nature1>getName()}.”;
 
 //The tree name is Oak Tree
+//////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
+<!-- LECTURE 2 -->
+class Soccer {
+	public $firstName;
+	public $lastName;
+	public $position;
+
+	function __construct($title, $firstName, $lastName, $position) {
+	$this>firstName = $firstName;
+	$this>lastName = $lastName;
+	$this>breed = $breed;
+	}
+
+	function getName() {
+	return “{$this>firstName}” .
+	“{$this>lastName}”;
+	}
+
+	$player1 = new Soccer(“Andrea”, “Pirlo”, “Center Attacking Mid”);
+	print “Soccer 1: {$player1>getName()}\n;
+}
+//////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
+class Musician {
+	public $firstName;
+	public $lastName;
+	public $instrument;
+
+	function __construct($title, $firstName, $lastName, $instrument) {
+	$this>firstName = $firstName;
+	$this>lastName = $lastName;
+	$this>breed = $instrument;
+	}
+
+	function getName() {
+	return “{$this>firstName}” .
+	“{$this>lastName}”;
+	}
+
+	$musician1 = new Musician(“Jimmy”, “Page”, “Guitar”);
+	print “Musician 1: {$musician1>getName()}\n;
+}
+//////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
+class Tree {
+	public $firstName;
+	public $lastName;
+	public $breed;
+
+	function __construct($title, $firstName, $lastName, $breed) {
+	$this>firstName = $firstName;
+	$this>lastName = $lastName;
+	$this>breed = $breed;
+	}
+
+	function getName() {
+	return “{$this>firstName}” .
+	“{$this>lastName}”;
+	}
+
+	$tree1 = new Tree(“Oak”, “Tree”, “Oak Tree”);
+	print “Tree 1: {$tree1>getName()}\n;
+}
