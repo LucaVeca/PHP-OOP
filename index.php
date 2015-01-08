@@ -1,4 +1,5 @@
 <!-- LECTURE 1 -->
+<!-- EXAMPLE 1 -->
 class Soccer{
 	//class player
 	//class ball
@@ -24,6 +25,7 @@ public function myMethod( $name, $number) {
 // stuff
 }
 ////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////////
+<!-- EXAMPLE 2 -->
 class Music{
 	//class Instrument
 	//class Genre
@@ -49,6 +51,7 @@ public function myMethod( $Band, $song) {
 // stuff
 }
 //////////////////////////////////////////////////////////////// /\///\/_//\ ///////////////////////////////////////////////////////////
+<!-- EXAMPLE 3 -->
 class Nature{
 	//class plant
 	//class food
@@ -74,6 +77,7 @@ public function myMethod( $tree, $fruit) {
 // stuff
 }
 //////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
+<!-- EXAMPLE 4 -->
 class Soccer {
 	public $name="player";
 	public $number=13;
@@ -95,6 +99,7 @@ print “The players name is{$soccer1>getName()}.”;
 
 //The players name is Andrea Pirlo
 //////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
+<!-- EXAMPLE 5 -->
 class Music {
 	private $Band="Led Zepplin";
 	private $song="Stairway to Heaven";
@@ -116,6 +121,7 @@ print “The band name is{$music1>getName()}.”;
 
 //The band name is Led Zepplin
 //////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
+<!-- EXAMPLE 6 -->
 class Nature {
 	protected $tree="oak";
 	protected $fruit="apple";
@@ -139,6 +145,7 @@ print “The tree name is {$nature1>getName()}.”;
 //The tree name is Oak Tree
 //////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
 <!-- LECTURE 2 -->
+<!-- EXAMPLE 1 -->
 class Soccer {
 	public $firstName;
 	public $lastName;
@@ -159,6 +166,7 @@ class Soccer {
 	print “Soccer 1: {$player1>getName()}\n;
 }
 //////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
+<!-- EXAMPLE 2 -->
 class Musician {
 	public $firstName;
 	public $lastName;
@@ -179,6 +187,7 @@ class Musician {
 	print “Musician 1: {$musician1>getName()}\n;
 }
 //////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
+<!-- EXAMPLE 3 -->
 class Tree {
 	public $firstName;
 	public $lastName;
