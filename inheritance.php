@@ -8,7 +8,7 @@ class Player{
 	public $sponsorName;
 	public $number;
 
-	function __construction($firstName, $lastName, $teamName, $clubName, $nationalName, $sponsorName, $number){
+	function __construct($firstName, $lastName, $teamName, $clubName, $nationalName, $sponsorName, $number){
 		$this->firstName = $firstName;
 		$this->lastName = $lastName;
 		$this->teamName = $teamName;
@@ -49,7 +49,7 @@ class Place{
 	public $ethnicity;
 	public $size;
 
-	function __construction($firstName, $lastName, $temperature, $type, $coordinate, $ethnicity, $size){
+	function __construct($firstName, $lastName, $temperature, $type, $coordinate, $ethnicity, $size){
 		$this->firstName = $firstName;
 		$this->lastName = $lastName;
 		$this->temperature = $temperature;
@@ -82,7 +82,7 @@ class Store{
 	public $sponsorName;
 	public $number;
 
-	function __construction($firstName, $lastName, $type, $location, $stores, $sponsorName, $number){
+	function __construct($firstName, $lastName, $type, $location, $stores, $sponsorName, $number){
 		$this->firstName = $firstName;
 		$this->lastName = $lastName;
 		$this->teamName = $type;
