@@ -6,7 +6,7 @@
 		public $age;
 	
 
-		public function __construct($firstName, $lastName, $aget){
+		public function __construct($firstName, $lastName, $age){
 			$this->firstName = $firstName;
 			$this->lastName = $lastName;
 			$this->age = $age;
@@ -20,11 +20,7 @@
 			return $this->age;
 		}
 }
-		$person1 = new Person();
-		$person1->firstName = "Luca ";
-		$person1->lastName = "Veca";
-		$person1->age = "15";
-
+		$person1 = new Person("Luca", "Veca", "15");
 		print "My name is " . $person1->Name() . ". " . "I am " . $person1->Age() . " years old";
 	
 

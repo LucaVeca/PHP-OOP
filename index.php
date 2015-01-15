@@ -1,5 +1,7 @@
+
 <!-- LECTURE 1 -->
 <!-- EXAMPLE 1 -->
+<!--
 class Soccer{
 	//class player
 	//class ball
@@ -26,6 +28,7 @@ public function myMethod( $name, $number) {
 }
 ////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////////
 <!-- EXAMPLE 2 -->
+<!--
 class Music{
 	//class Instrument
 	//class Genre
@@ -52,6 +55,7 @@ public function myMethod( $Band, $song) {
 }
 //////////////////////////////////////////////////////////////// /\///\/_//\ ///////////////////////////////////////////////////////////
 <!-- EXAMPLE 3 -->
+<!--
 class Nature{
 	//class plant
 	//class food
@@ -78,6 +82,7 @@ public function myMethod( $tree, $fruit) {
 }
 //////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
 <!-- EXAMPLE 4 -->
+<!--
 class Soccer {
 	public $name="player";
 	public $number=13;
@@ -100,6 +105,7 @@ print “The players name is{$soccer1>getName()}.”;
 //The players name is Andrea Pirlo
 //////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
 <!-- EXAMPLE 5 -->
+<!--
 class Music {
 	private $Band="Led Zepplin";
 	private $song="Stairway to Heaven";
@@ -122,6 +128,7 @@ print “The band name is{$music1>getName()}.”;
 //The band name is Led Zepplin
 //////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
 <!-- EXAMPLE 6 -->
+<!--
 class Nature {
 	protected $tree="oak";
 	protected $fruit="apple";
@@ -146,64 +153,61 @@ print “The tree name is {$nature1>getName()}.”;
 //////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
 <!-- LECTURE 2 -->
 <!-- EXAMPLE 1 -->
-class Soccer {
-	public $firstName;
-	public $lastName;
-	public $position;
+<?php
+class Soccer{
+	public $firstName;
+	public $lastName;
+	public $position;
 
-	function __construct($title, $firstName, $lastName, $position) {
-	$this>firstName = $firstName;
-	$this>lastName = $lastName;
-	$this>breed = $breed;
+	function __construct($firstName, $lastName, $position){
+		$this->firstName = $firstName;
+		$this->lastName = $lastName;
+		$this->position = $position;
 	}
 
-	function getName() {
-	return “{$this>firstName}” .
-	“{$this>lastName}”;
+	function getName(){
+		return $this->firstName . $this->lastName;
 	}
-
-	$player1 = new Soccer(“Andrea”, “Pirlo”, “Center Attacking Mid”);
-	print “Soccer 1: {$player1>getName()}\n;
 }
-//////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
-<!-- EXAMPLE 2 -->
-class Musician {
-	public $firstName;
-	public $lastName;
-	public $instrument;
 
-	function __construct($title, $firstName, $lastName, $instrument) {
-	$this>firstName = $firstName;
-	$this>lastName = $lastName;
-	$this>breed = $instrument;
+$player = new Soccer("Andrea ", "Pirlo", "Center attacking mid");
+	print "Soccer 1:" . $player->getName();
+
+	class Basketball{
+	public $firstName;
+	public $lastName;
+	public $position;
+
+	function __construct($firstName, $lastName, $position){
+		$this->firstName = $firstName;
+		$this->lastName = $lastName;
+		$this->position = $position;
 	}
 
-	function getName() {
-	return “{$this>firstName}” .
-	“{$this>lastName}”;
+	function getName(){
+		return $this->firstName . $this->lastName;
 	}
-
-	$musician1 = new Musician(“Jimmy”, “Page”, “Guitar”);
-	print “Musician 1: {$musician1>getName()}\n;
 }
-//////////////////////////////////////////////////////////////// /\///\/_//\ /////////////////////////////////////////////////////////
-<!-- EXAMPLE 3 -->
-class Tree {
-	public $firstName;
-	public $lastName;
-	public $breed;
 
-	function __construct($title, $firstName, $lastName, $breed) {
-	$this>firstName = $firstName;
-	$this>lastName = $lastName;
-	$this>breed = $breed;
+$player = new Soccer("Kobe ", "Bryant", "Center attacking mid");
+	print "Basketball 1:" . $player->getName();
+
+	class Baseball{
+	public $firstName;
+	public $lastName;
+	public $position;
+
+	function __construct($firstName, $lastName, $position){
+		$this->firstName = $firstName;
+		$this->lastName = $lastName;
+		$this->position = $position;
 	}
 
-	function getName() {
-	return “{$this>firstName}” .
-	“{$this>lastName}”;
+	function getName(){
+		return $this->firstName . $this->lastName;
 	}
-
-	$tree1 = new Tree(“Oak”, “Tree”, “Oak Tree”);
-	print “Tree 1: {$tree1>getName()}\n;
 }
+
+$player = new Soccer("Derek ", "Jeter", "Shortstop");
+	print "Baseball 1:" . $player->getName();
+?>
